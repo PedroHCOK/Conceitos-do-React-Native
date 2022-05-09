@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, TextInput, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 
 interface TodoInputProps {
@@ -7,10 +7,14 @@ interface TodoInputProps {
 }
 
 export function TodoInput({ addTask }: TodoInputProps) {
-  // const [task, setTask] = useState('');
+   const [task, setTask] = useState('');
 
   function handleAddNewTask() {
-    //TODO - Call addTask if task not empty and clean input value 
+    if (!task)
+      return;
+
+    addTask(task);
+    setTask('');  
   }
 
   return (
@@ -21,13 +25,17 @@ export function TodoInput({ addTask }: TodoInputProps) {
         placeholderTextColor="#B2B2B2"
         returnKeyType="send"
         selectionColor="#666666"
-        //TODO - use value, onChangeText and onSubmitEditing props
+        value={task}
+        onChangeText={(text)=>setTask(text)}//onChangeText é um funcao callback que retorna um parametro, por isso deve ser formatado tipo arrow 
+        onSubmitEditing={handleAddNewTask} // Não é nescessario formatacao tipo arrow () => handleAddNewTask () visto que nao retorna argumento.
+        
       />
       <TouchableOpacity
         testID="add-new-task-button"
         activeOpacity={0.7}
         style={styles.addButton}
-        //TODO - onPress prop
+        onPress={handleAddNewTask}  
+        
       >
         <Icon name="chevron-right" size={24} color="#B2B2B2" />
       </TouchableOpacity>
