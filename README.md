@@ -22,7 +22,7 @@ The project is the result of my firsts steps on the React Native.
 
 To run this project, you will need the following packages installed:
 
-- [NodeJS v18.0 or higher](https://nodejs.org/en/)
+- [NodeJS v15.0 or higher](https://nodejs.org/en/)
 - [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12) or [Android Studio](https:/P/developer.android.com/studio)
 - [Cocoapods](https://cocoapods.org/)
 - [Yarn](https://yarnpkg.com/)
