@@ -12,9 +12,9 @@
 
 The project is the result of my firsts steps on the React Native.
 <div aling="center"> 
-  <img src="https://user-images.githubusercontent.com/88693775/169705725-571e83cd-c720-4b02-81be-5b60b446fb08.gif" width="40%">
-  <img src="https://user-images.githubusercontent.com/88693775/169705719-fe81d4ae-9847-4c2e-bb0b-766031259568.gif" width="40%">
-  <img src="https://user-images.githubusercontent.com/88693775/169705723-79885a26-051b-46cd-87e7-3f57ee7d9991.gif" width="40%">
+  <img src="https://user-images.githubusercontent.com/88693775/169705725-571e83cd-c720-4b02-81be-5b60b446fb08.gif" width="80%">
+  <img src="https://user-images.githubusercontent.com/88693775/169705719-fe81d4ae-9847-4c2e-bb0b-766031259568.gif" width="80%">
+  <img src="https://user-images.githubusercontent.com/88693775/169705723-79885a26-051b-46cd-87e7-3f57ee7d9991.gif" width="80%">
 </div>
 
 ### Prerequisites
